@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Javascript</title>
+    <style>
+       #pr{
+           width: 500px;
+           height: 300px;
+           background-color: gray;
+           margin: 10px;
+
+       }
+       button{
+           margin: 10px;
+           background-color: blue;
+       }
+       h1{
+           text-align: center;
+       }
+
+    </style>
+  </head>
+  <body>
+    <h1>Javascript Assignment No.3</h1>
+    <button onclick="something()">Click</button>
+    <input type="text" id="inp1" placeholder="Enter Name" />
+    <input type="text" id="inp2" placeholder="Enter City" />
+    <div id="pr">
+
+    </div>
+
+    <script>
+      function something() {
+        let name = document.querySelector("#inp1").value;
+        let city = document.querySelector("#inp2").value;
+        console.log(name);
+
+        document.querySelector("#pr").innerHTML = `<h1>${name} ${city}</h1>`;
+      }
+    </script>
+  </body>
+</html>
